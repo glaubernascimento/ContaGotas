@@ -27,6 +27,9 @@ body{
     width: 100%;  /*coloca a porcetagem de largura*/
     max-width: 1080px; /*Diz qual é o máximo de tamanho que o site vai ter*/
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    
 }
  /* cabeçalho */
  
@@ -34,7 +37,7 @@ header {
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
-    margin: .5rem;
+    margin: .5rem .5rem 0 .5rem;
     border-radius: .5rem;
     /* border: 1rem double black; */
 }
@@ -52,6 +55,7 @@ header img {
 header h1 {
     margin: 0;
     font-size: 2.5rem;
+    text-shadow: 4px 2px 1px steelblue;
 }
 
 header small{
@@ -84,4 +88,42 @@ nav a:hover{
 }
 nav a:last-child{
     border-radius:  0 .5rem .5rem 0;
+}
+main{
+    background-color: white;
+    padding: 1rem;
+    margin: 0 .5rem .5rem .5rem;
+    border-radius: .5rem;
+    flex-grow: 1;
+}
+
+/* Rodapé*/
+
+footer{
+    background-color: black;
+    margin: 0 .5rem .5rem .5rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+
+}
+
+footer a:hover {
+    color: orangered;
+}
+
+footer i {
+    font-size: 1.8rem;
+    margin: .5rem;
+}
+footer > div{
+    text-align: center;
+    margin: .5rem;
 }
