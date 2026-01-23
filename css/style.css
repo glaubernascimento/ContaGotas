@@ -20,6 +20,14 @@ html, body{
 body{
     background-color: steelblue;
 }
+a{
+    color: steelblue;
+    text-decoration: none;
+}
+
+a:hover{
+    color: orangered;
+}
 
 #wrap {
     position: relative;
