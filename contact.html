@@ -18,7 +18,7 @@
             display: block;
         }
 
-        .alert-banner{
+        .alert-banner {
             display: block;
             text-align: center;
             color: red;
@@ -39,89 +39,99 @@
             border-radius: .3rem;
         }
 
-        .contact-form textarea{
+        .contact-form textarea {
             height: 6rem;
             resize: vertical;
         }
 
         .contact-form input,
-        .contact-form textarea{
+        .contact-form textarea {
             width: 100%;
             border: 1px solid red;
             border-bottom: 3px solid red;
             background-color: rgb(255, 205, 205);
         }
-        .contact-form button{
+
+        .contact-form button {
             padding: 1rem;
             background-color: gray;
             color: white;
             /*bloqueia a ação normal do elemento*/
             pointer-events: none;
         }
+
         .contact-form input:valid,
-        .contact-form textarea:valid{
+        .contact-form textarea:valid {
             background-color: rgb(225, 225, 255);
             border: 1px solid blue;
-            border-bottom:3px solid blue;
+            border-bottom: 3px solid blue;
         }
+
         /* Botão de enviar quando o formulário for válido */
         .contact-form:valid button {
             background-color: steelblue;
             pointer-events: all;
             cursor: pointer;
         }
-        .contact-side{
+
+        .contact-side {
             background-color: #efefef;
             margin-top: 3rem;
             border-top: 3px dotted gray;
             padding: 0 1rem;
         }
-        .contact-side a{
+
+        .contact-side a {
             display: flex;
             align-items: center;
         }
-        .contact-side ul{
+
+        .contact-side ul {
             list-style: none;
             padding: 1rem;
             line-height: 3;
         }
-        .contact-side img{
+
+        .contacts-qrcode {
             display: block;
             margin: 2rem auto 1rem auto;
-        }
-        .divider {
-            width: 1rem;
-            height: 1rem;
-         }
-        /* Quando a largura da tela for de 768px ou mais */
-         @media screen and (min-width: 768px) {
-            
-        .contacts{
-            display: flex;
-        }
-        .contact-form{
-            flex-grow: 1;
-            margin-right: 1rem;
-        }
-        .contact-side{
-            max-width: 220px;
-            min-width: 220px;
-            margin-top: 0;
-            border: none;
-            border-left: 3px dotted grey;
-        }
-      
-        .contacts-qrcode {
             width: 100%;
             max-width: auto;
             height: auto;
         }
+
         .divider {
-                width: 0;
-                height: 0;
+            width: 1rem;
+            height: 1rem;
         }
 
-         }
+        /* Quando a largura da tela for de 768px ou mais */
+        @media screen and (min-width: 768px) {
+
+            .contacts {
+                display: flex;
+            }
+
+            .contact-form {
+                flex-grow: 1;
+                margin-right: 1rem;
+            }
+
+            .contact-side {
+                max-width: 220px;
+                min-width: 220px;
+                margin-top: 0;
+                border: none;
+                border-left: 3px dotted grey;
+            }
+
+
+            .divider {
+                width: 0;
+                height: 0;
+            }
+
+        }
     </style>
 
 </head>
@@ -200,15 +210,18 @@
                     <h3>Redes Sociais:</h3>
                     Ou então conheça nossas redes sociais:
                     <ul>
-                        <li><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-square-facebook fa-fw fa-2x"></i> <span>Facebook</span></a>
+                        <li><a href="https://facebook.com" target="_blank"><i
+                                    class="fa-brands fa-square-facebook fa-fw fa-2x"></i> <span>Facebook</span></a>
                         </li>
-                        <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-square-instagram fa-fw fa-2x"></i> <span>instagram</span></a>
+                        <li><a href="https://instagram.com" target="_blank"><i
+                                    class="fa-brands fa-square-instagram fa-fw fa-2x"></i> <span>instagram</span></a>
                         </li>
-                        <li><a href="https://youtube.com" target="_blank"><i class="fa-brands fa-square-youtube fa-fw fa-2x"></i> <span>YouTube</span></a>
+                        <li><a href="https://youtube.com" target="_blank"><i
+                                    class="fa-brands fa-square-youtube fa-fw fa-2x"></i> <span>YouTube</span></a>
                         </li>
                     </ul>
 
-                     <h3>QRCode</h3>
+                    <h3>QRCode</h3>
                     Aponte sua câmera para o qrcode abaixo:
                     <img src="img/frame.png" alt="QRCode" class="contacts-qrcode">
 
